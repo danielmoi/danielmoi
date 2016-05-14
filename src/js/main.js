@@ -1,1 +1,3 @@
-console.log('main.js');
+'use strict';
+
+console.log('from main.jsx');
