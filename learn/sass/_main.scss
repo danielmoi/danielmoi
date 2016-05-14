@@ -1,0 +1,89 @@
+* {
+  // font-size: 10px;
+}
+
+html {
+  // font-size: 14px;
+}
+
+.fixed {
+  font-size: 14px;
+}
+code {
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.main__container {
+  position: relative;
+  top: $header-height + 20px;
+}
+.main-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.main-section {
+  border-top: 1px solid gray;
+  padding: 10px;
+  p {
+    margin-top: 10px;
+  }
+  code {
+    color: tomato;
+  }
+}
+
+.main-section:last-child {
+  border-bottom: 1px solid gray;
+}
+
+.main-section--unspecified {
+
+}
+
+.main-section--em {
+  p {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+}
+
+.main-section--rem {
+  p,
+  h1,
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.main-section--px {
+  p,
+  h1,
+  h2 {
+    font-size: 18px;
+  }
+}
+
+.main-section--inherit {
+  p,
+  h1,
+  h2 {
+    font-size: inherit;
+  }
+}
+
+.main-section--initial {
+  p,
+  h1,
+  h2 {
+    font-size: initial;
+  }
+}

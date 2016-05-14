@@ -1,0 +1,27 @@
+.header {
+  height: $header-height;
+  background: $header;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+.header-container {
+  background: lightgray;
+}
+
+.header__heading {
+  text-align: center;
+  font-size: 36px;
+  padding: 10px 0;
+}
+
+.header__logo {
+  line-height: $header-height;
+}
+
+.header__logo--image {
+  vertical-align: middle;
+}

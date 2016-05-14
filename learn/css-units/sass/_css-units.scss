@@ -1,0 +1,163 @@
+* {
+  // font-size: 10px;
+}
+
+html {
+  // font-size: 14px;
+}
+
+.fixed {
+  font-size: 14px;
+}
+code {
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+
+
+
+.main-section {
+  border-top: 1px solid gray;
+  padding: 10px;
+  p {
+    margin-top: 10px;
+  }
+  code {
+    color: tomato;
+  }
+}
+
+.main-section:last-child {
+  border-bottom: 1px solid gray;
+}
+
+.main-section--unspecified {
+
+}
+
+.main-section--em {
+  p {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+}
+
+.main-section--rem {
+  p,
+  h1,
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.main-section--px {
+  p,
+  h1,
+  h2 {
+    font-size: 18px;
+  }
+}
+
+.main-section--inherit {
+  p,
+  h1,
+  h2 {
+    font-size: inherit;
+  }
+}
+
+.main-section--initial {
+  p,
+  h1,
+  h2 {
+    font-size: initial;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cu-section {
+  border: 1px solid $primary-light;
+  padding: 10px;
+  margin-top: 10px;
+  word-break: break-word;
+}
+
+.cu-controls__container {
+  margin: 20px auto;
+}
+
+.cu-controls__section {
+  margin: 10px auto;
+  label {
+    padding-right: 10px;
+  }
+}
+
+.cu-controls__label {
+  width: 10%;
+  display: inline-block;
+  text-align: right;
+}
+
+.cu-controls__button-container {
+  text-align: center;
+}
+
+.cu-asterisk:before,
+.cu-html:before,
+.cu-body:before,
+.cu-div:before,
+.cu-grandparent:before,
+.cu-parent:before,
+.cu-child:before {
+  display: inline;
+  font-weight: 900;
+  color: inherit;
+}
+
+.cu-asterisk:before {
+  content: '*: ';
+  font-family: Courier;
+}
+.cu-html:before {
+  content: 'html: ';
+  font-family: Courier;
+}
+.cu-body:before {
+  content: 'body: ';
+  font-family: Courier;
+}
+.cu-div:before {
+  content: 'div: ';
+  font-family: Courier;
+}
+.cu-grandparent:before {
+  content: 'GRANDPARENT: ';
+}
+.cu-parent:before {
+  content: 'PARENT: ';
+}
+.cu-child:before {
+  content: 'CHILD: ';
+}
+
+.cu-color--html {
+  color: $red;
+}
+
+label,
+span {
+  color: inherit;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Units | Asterisk</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/asterisk-html-body-div.css">
+</head>
+
+<body>
+
+  <header class="header-container">
+    <h1 class="header__heading">CSS Units</h1>
+  </header>
+
+
+  <div class="main-container">
+
+    <div class="main-section intro">
+      <pre>
+        <p class="fixed">The CSS for this page:</p>
+        <code>* { font-size: 13px; }</code>
+        <code>html { font-size: 10px; }</code>
+        <code>body { font-size: 15px; }</code>
+      </pre>
+    </div>
+
+    <div class="main-section main-section--unspecified">
+      <code class="main-section--code">div font-size: </code>
+      <p>This &lt;p&gt; has no font-size specified. Computed: 13px</p>
+      <h1>This &lt;h1&gt; has no font-size specified. Computed: 13px</h1>
+      <h2>This &lt;h2&gt; has no font-size specified. Computed: 13px</h2>
+    </div>
+
+    <div class="main-section main-section--em div-em">
+      <code class="main-section--code">div font-size: 1.5em</code>
+      <p>This &lt;p&gt; has font-size: 1em – computed: 13px</p>
+      <h1>This &lt;h1&gt; has font-size: 1em – computed: 13px</h1>
+      <h2>This &lt;h2&gt; has font-size: 1em – computed: 13px</h2>
+    </div>
+
+    <div class="main-section main-section--rem div-rem">
+      <code class="main-section--code">font-size: 1.5rem</code>
+      <p>This &lt;p&gt; has font-size: 1em – computed: 10px</p>
+      <h1>This &lt;h1&gt; has font-size: 1em – computed: 10px</h1>
+      <h2>This &lt;h2&gt; has font-size: 1em – computed: 10px</h2>
+    </div>
+
+    <div class="main-section main-section--px">
+      <code class="main-section--code">font-size: 18px</code>
+      <p>This &lt;p&gt; has font-size: 18px – computed: 18px</p>
+      <h1>This &lt;h1&gt; has font-size: 18px – computed: 18px</h1>
+      <h2>This &lt;h2&gt; has font-size: 18px – computed: 18px</h2>
+    </div>
+
+
+    <div class="main-section main-section--inherit">
+      <code class="main-section--code">font-size: inherit</code>
+      <p>This &lt;p&gt; has font-size: inherit – computed: 13px</p>
+      <h1>This &lt;h1&gt; has font-size: inherit – computed: 13px</h1>
+      <h2>This &lt;h2&gt; has font-size: inherit – computed: 13px</h2>
+    </div>
+
+    <div class="main-section main-section--initial">
+      <code class="main-section--code">font-size: initial</code>
+      <p>This &lt;p&gt; has font-size: initial – computed: 16px</p>
+      <h1>This &lt;h1&gt; has font-size: initial – computed: 16px</h1>
+      <h2>This &lt;h2&gt; has font-size: initial – computed: 16px</h2>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
