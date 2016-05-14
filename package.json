@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/danielmoi/hello/issues"
   },
-  "homepage": "https://github.com/danielmoi/hello#readme"
+  "homepage": "https://github.com/danielmoi/hello#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
