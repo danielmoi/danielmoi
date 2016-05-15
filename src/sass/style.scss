@@ -1,11 +1,13 @@
-// Core variables and mixins
 @import "_variables";
 @import "_mixins";
 
-// Reset
-//@import "partials/normalize";
-@import "_global";
+@import "_reset";
 
+@import "_typography";
 
-// Core CSS//
+@import "_elements";
+@import "_buttons";
+@import "_forms";
 @import "_main";
+
+@import "_header";
