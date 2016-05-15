@@ -16,6 +16,7 @@ gulp.task('babel', function() {
 gulp.task('watch', ['babel'], function () {
     gulp.watch('src/jsx/**/*.jsx', ['babel', browserSync.reload] );
     gulp.watch('src/sass/**/*.scss', ['sass', browserSync.reload]);
+    gulp.watch('src/**/*.html', [browserSync.reload]);
 
 });
 
