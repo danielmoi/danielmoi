@@ -104,9 +104,13 @@ var MainLayout = React.createClass({
       )
   }
 })
+// var routerHistory = ReactRouter.useRouterHistory;
+// var appHistory = routerHistory(createHistory)({ queryKey: false });
+
+var browserHistory = ReactRouter.browserHistory;
 
 ReactDOM.render((
-  <Router>
+  <Router history={ browserHistory }>
     <Route path="/" component={MainLayout}>
       <IndexRoute component={Home} />
       <Route path="/skills" component={Skills} />

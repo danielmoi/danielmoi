@@ -220,10 +220,14 @@ var MainLayout = React.createClass({
     );
   }
 });
+// var routerHistory = ReactRouter.useRouterHistory;
+// var appHistory = routerHistory(createHistory)({ queryKey: false });
+
+var browserHistory = ReactRouter.browserHistory;
 
 ReactDOM.render(React.createElement(
   Router,
-  null,
+  { history: browserHistory },
   React.createElement(
     Route,
     { path: "/", component: MainLayout },
