@@ -20,6 +20,71 @@ var Header = React.createClass({
   }
 });
 
+var Main = React.createClass({
+  displayName: "Main",
+
+  render: function render() {
+    return React.createElement(
+      "main",
+      { className: "main__container" },
+      React.createElement(
+        "h2",
+        { className: "main__title" },
+        "Projects"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Project 0: ",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "Tic Tac Toe"
+        )
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Project 0: ",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "Catbus 4000"
+        )
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Project 1: ",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "Sortr"
+        )
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Project 2: ",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "BuddyUP"
+        )
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Project 3: ",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "Musical Monsters"
+        )
+      )
+    );
+  }
+});
 var Footer = React.createClass({
   displayName: "Footer",
 
@@ -50,6 +115,7 @@ var App = React.createClass({
       "div",
       null,
       React.createElement(Header, null),
+      React.createElement(Main, null),
       React.createElement(Footer, null)
     );
   }

@@ -10,6 +10,20 @@ var Header = React.createClass({
   }
 });
 
+var Main = React.createClass({
+  render: function() {
+    return (
+      <main className="main__container">
+        <h2 className="main__title">Projects</h2>
+        <p>Project 0: <a href="/">Tic Tac Toe</a></p>
+        <p>Project 0: <a href="/">Catbus 4000</a></p>
+        <p>Project 1: <a href="/">Sortr</a></p>
+        <p>Project 2: <a href="/">BuddyUP</a></p>
+        <p>Project 3: <a href="/">Musical Monsters</a></p>
+      </main>
+    )
+  }
+})
 var Footer = React.createClass({
   render: function() {
     return (
@@ -29,6 +43,7 @@ var App = React.createClass({
     return (
       <div>
         <Header />
+        <Main />
         <Footer />
       </div>
     );

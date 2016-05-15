@@ -93,7 +93,7 @@ body {
 a {
   cursor: pointer; }
   a:hover {
-    color: blue; }
+    color: #00a5cd; }
 
 .btn {
   font-size: 1em;
@@ -203,7 +203,7 @@ input[type=submit] {
       padding: 0 1em; } }
 
 .main__container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   position: relative;
   top: 120px;
@@ -214,8 +214,10 @@ input[type=submit] {
       top: 150px; } }
 
 .main__title {
-  text-align: center;
-  padding: 1em 0; }
+  text-align: left;
+  font-weight: 900;
+  padding: 1em 0;
+  color: #00a5cd; }
 
 .footer {
   width: 100%;
