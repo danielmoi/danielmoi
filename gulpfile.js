@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var babel = require('gulp-babel');
+var browserSync  = require('browser-sync');
+
 
 gulp.task('babel', function() {
   return gulp.src("src/jsx/**/*")
@@ -10,7 +12,18 @@ gulp.task('babel', function() {
 });
 
 gulp.task('watch', ['babel'], function () {
-    gulp.watch('src/jsx/**/*.jsx', ['babel'] );
+    gulp.watch('src/jsx/**/*.jsx', ['babel', browserSync.reload] );
 });
 
-gulp.task("default", ["watch"]);
+gulp.task('browsersync', function() {
+  browserSync({
+    server: {
+      baseDir: './src/'
+    },
+    open: false
+    // online: false,
+    // notify: false,
+  });
+});
+
+gulp.task("default", ["browsersync", "watch"]);
