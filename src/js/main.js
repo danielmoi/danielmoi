@@ -5,9 +5,17 @@ var Header = React.createClass({
 
   render: function render() {
     return React.createElement(
-      "h1",
-      { className: "header__title" },
-      "Daniel Moi"
+      "header",
+      { className: "header" },
+      React.createElement(
+        "div",
+        { className: "header__container" },
+        React.createElement(
+          "h1",
+          { className: "header__title" },
+          "Daniel Moi"
+        )
+      )
     );
   }
 });

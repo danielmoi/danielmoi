@@ -1,7 +1,11 @@
 var Header = React.createClass({
   render: function() {
     return (
-      <h1 className="header__title">Daniel Moi</h1>
+      <header className="header">
+        <div className="header__container">
+          <h1 className="header__title">Daniel Moi</h1>
+        </div>
+      </header>
     )
   }
 });
