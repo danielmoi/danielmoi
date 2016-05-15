@@ -20,6 +20,26 @@ var Header = React.createClass({
   }
 });
 
+var Footer = React.createClass({
+  displayName: "Footer",
+
+  render: function render() {
+    return React.createElement(
+      "footer",
+      { className: "footer" },
+      React.createElement(
+        "div",
+        { className: "footer__container" },
+        React.createElement(
+          "p",
+          null,
+          "Made with ♥ & React © 2016 Daniel Moi"
+        )
+      )
+    );
+  }
+});
+
 var App = React.createClass({
   displayName: "App",
 
@@ -29,7 +49,8 @@ var App = React.createClass({
     return React.createElement(
       "div",
       null,
-      React.createElement(Header, null)
+      React.createElement(Header, null),
+      React.createElement(Footer, null)
     );
   }
 });
