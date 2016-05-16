@@ -193,6 +193,7 @@ input[type=submit] {
   position: fixed;
   width: 100%;
   z-index: 1;
+  background: #323232;
   padding: 0;
   border-top: 1px solid #00a5cd; }
   @media screen and (min-width: 600px) {
