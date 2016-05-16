@@ -74,8 +74,8 @@ var Projects = React.createClass({
   }
 });
 
-var Skills = React.createClass({
-  displayName: "Skills",
+var About = React.createClass({
+  displayName: "About",
 
   render: function render() {
     return React.createElement(
@@ -84,17 +84,57 @@ var Skills = React.createClass({
       React.createElement(
         "h2",
         { className: "main__title" },
-        "Skills"
+        "How it all started for me..."
       ),
       React.createElement(
         "p",
         null,
-        "HTML5"
+        "I've always been curious about how amazing websites are created. Working as a graphic designer in a marketing agency, I felt an increasing desire to discover what was in the MAGIC BOX that web developers use to translate visual assets into a functional website! "
+      ),
+      React.createElement(
+        "h2",
+        { className: "main__title" },
+        "Some of my skills"
+      ),
+      React.createElement(
+        "h3",
+        { className: "main__subtitle" },
+        "Languages"
       ),
       React.createElement(
         "p",
         null,
-        "JavaScript"
+        "JavaScript, Ruby, HTML5, CSS3, SASS"
+      ),
+      React.createElement(
+        "h3",
+        { className: "main__subtitle" },
+        "Frameworks / Libraries"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Ruby on Rails, Backbone, Knockout, jQuery, Underscore"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "D3, Three.js, Greensock (TweenLite, TweenMax)"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "And, some exposure to: React (how I made this website), Angular, Gulp, Jasmine, RSpec"
+      ),
+      React.createElement(
+        "h3",
+        { className: "main__subtitle" },
+        "Software"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "git, GitHub, Sketch, illustrator, indesign, photoshop, lightroom"
       )
     );
   }
@@ -241,7 +281,7 @@ var MainLayout = React.createClass({
               { className: "nav__list-item" },
               React.createElement(
                 Link,
-                { to: "/skills", activeClassName: "active" },
+                { to: "/about", activeClassName: "active" },
                 "About Me"
               )
             ),
@@ -287,7 +327,7 @@ ReactDOM.render(React.createElement(
     { path: "/", component: MainLayout },
     React.createElement(IndexRoute, { component: Home }),
     React.createElement(Route, { path: "/home", component: Home }),
-    React.createElement(Route, { path: "/skills", component: Skills }),
+    React.createElement(Route, { path: "/about", component: About }),
     React.createElement(Route, { path: "/projects", component: Projects }),
     React.createElement(Route, { path: "/contact", component: Contact })
   )

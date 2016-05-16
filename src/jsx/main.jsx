@@ -25,13 +25,25 @@ var Projects = React.createClass({
   }
 });
 
-var Skills = React.createClass({
+var About = React.createClass({
   render: function() {
     return (
       <div className="main__container">
-        <h2 className="main__title">Skills</h2>
-        <p>HTML5</p>
-        <p>JavaScript</p>
+        <h2 className="main__title">How it all started for me...</h2>
+        <p>I've always been curious about how amazing websites are created. Working as a graphic designer in a marketing agency, I felt an increasing desire to discover what was in the MAGIC BOX that web developers use to translate visual assets into a functional website! </p>
+        <h2 className="main__title">Some of my skills</h2>
+
+        <h3 className="main__subtitle">Languages</h3>
+        <p>JavaScript, Ruby, HTML5, CSS3, SASS</p>
+
+        <h3 className="main__subtitle">Frameworks / Libraries</h3>
+        <p>Ruby on Rails, Backbone, Knockout, jQuery, Underscore</p>
+        <p>D3, Three.js, Greensock (TweenLite, TweenMax)</p>
+        <p>And, some exposure to: React (how I made this website), Angular, Gulp, Jasmine, RSpec</p>
+
+        <h3 className="main__subtitle">Software</h3>
+        <p>git, GitHub, Sketch, illustrator, indesign, photoshop, lightroom</p>
+
       </div>
     )
   }
@@ -105,7 +117,7 @@ var MainLayout = React.createClass({
               </li>
 
               <li className="nav__list-item">
-                <Link to="/skills" activeClassName="active">About Me</Link>
+                <Link to="/about" activeClassName="active">About Me</Link>
               </li>
 
               <li className="nav__list-item">
@@ -136,7 +148,7 @@ ReactDOM.render((
     <Route path="/" component={MainLayout}>
       <IndexRoute component={Home}/>
       <Route path="/home" component={Home}/>
-      <Route path="/skills" component={Skills}/>
+      <Route path="/about" component={About}/>
       <Route path="/projects" component={Projects}/>
       <Route path="/contact" component={Contact}/>
 
