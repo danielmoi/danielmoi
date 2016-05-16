@@ -29,20 +29,26 @@ var About = React.createClass({
   render: function() {
     return (
       <div className="main__container">
-        <h2 className="main__title">How it all started for me...</h2>
-        <p>I've always been curious about how amazing websites are created. Working as a graphic designer in a marketing agency, I felt an increasing desire to discover what was in the MAGIC BOX that web developers use to translate visual assets into a functional website! </p>
-        <h2 className="main__title">Some of my skills</h2>
+<div>
+  <h2 className="main__title">How it all started for me...</h2>
+  <p>I've always been curious about how amazing websites are created. Working as a graphic designer in a marketing agency, I felt an increasing desire to discover what was in the MAGIC BOX that web developers use to translate visual assets into a functional website! </p>
+  <h2 className="main__title">Some of my skills</h2>
 
-        <h3 className="main__subtitle">Languages</h3>
-        <p>JavaScript, Ruby, HTML5, CSS3, SASS</p>
+  <h3 className="main__subtitle">Languages</h3>
+  <p>JavaScript, Ruby, HTML5, CSS3, SASS</p>
+</div>
 
-        <h3 className="main__subtitle">Frameworks / Libraries</h3>
-        <p>Ruby on Rails, Backbone, Knockout, jQuery, Underscore</p>
-        <p>D3, Three.js, Greensock (TweenLite, TweenMax)</p>
-        <p>And, some exposure to: React (how I made this website), Angular, Gulp, Jasmine, RSpec</p>
+<div>
+  <h3 className="main__subtitle">Frameworks / Libraries</h3>
+  <p>Ruby on Rails, Backbone, Knockout, jQuery, Underscore</p>
+  <p>D3, Three.js, Greensock (TweenLite, TweenMax)</p>
+  <p>And, some exposure to: React (how I made this website), Angular, Gulp, Jasmine, RSpec</p>
+</div>
 
-        <h3 className="main__subtitle">Software</h3>
-        <p>git, GitHub, Sketch, illustrator, indesign, photoshop, lightroom</p>
+<div>
+  <h3 className="main__subtitle">Software</h3>
+  <p>git, GitHub, Sketch, illustrator, indesign, photoshop, lightroom</p>
+</div>
 
       </div>
     )

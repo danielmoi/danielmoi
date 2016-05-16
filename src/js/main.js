@@ -82,59 +82,71 @@ var About = React.createClass({
       "div",
       { className: "main__container" },
       React.createElement(
-        "h2",
-        { className: "main__title" },
-        "How it all started for me..."
-      ),
-      React.createElement(
-        "p",
+        "div",
         null,
-        "I've always been curious about how amazing websites are created. Working as a graphic designer in a marketing agency, I felt an increasing desire to discover what was in the MAGIC BOX that web developers use to translate visual assets into a functional website! "
+        React.createElement(
+          "h2",
+          { className: "main__title" },
+          "How it all started for me..."
+        ),
+        React.createElement(
+          "p",
+          null,
+          "I've always been curious about how amazing websites are created. Working as a graphic designer in a marketing agency, I felt an increasing desire to discover what was in the MAGIC BOX that web developers use to translate visual assets into a functional website! "
+        ),
+        React.createElement(
+          "h2",
+          { className: "main__title" },
+          "Some of my skills"
+        ),
+        React.createElement(
+          "h3",
+          { className: "main__subtitle" },
+          "Languages"
+        ),
+        React.createElement(
+          "p",
+          null,
+          "JavaScript, Ruby, HTML5, CSS3, SASS"
+        )
       ),
       React.createElement(
-        "h2",
-        { className: "main__title" },
-        "Some of my skills"
-      ),
-      React.createElement(
-        "h3",
-        { className: "main__subtitle" },
-        "Languages"
-      ),
-      React.createElement(
-        "p",
+        "div",
         null,
-        "JavaScript, Ruby, HTML5, CSS3, SASS"
+        React.createElement(
+          "h3",
+          { className: "main__subtitle" },
+          "Frameworks / Libraries"
+        ),
+        React.createElement(
+          "p",
+          null,
+          "Ruby on Rails, Backbone, Knockout, jQuery, Underscore"
+        ),
+        React.createElement(
+          "p",
+          null,
+          "D3, Three.js, Greensock (TweenLite, TweenMax)"
+        ),
+        React.createElement(
+          "p",
+          null,
+          "And, some exposure to: React (how I made this website), Angular, Gulp, Jasmine, RSpec"
+        )
       ),
       React.createElement(
-        "h3",
-        { className: "main__subtitle" },
-        "Frameworks / Libraries"
-      ),
-      React.createElement(
-        "p",
+        "div",
         null,
-        "Ruby on Rails, Backbone, Knockout, jQuery, Underscore"
-      ),
-      React.createElement(
-        "p",
-        null,
-        "D3, Three.js, Greensock (TweenLite, TweenMax)"
-      ),
-      React.createElement(
-        "p",
-        null,
-        "And, some exposure to: React (how I made this website), Angular, Gulp, Jasmine, RSpec"
-      ),
-      React.createElement(
-        "h3",
-        { className: "main__subtitle" },
-        "Software"
-      ),
-      React.createElement(
-        "p",
-        null,
-        "git, GitHub, Sketch, illustrator, indesign, photoshop, lightroom"
+        React.createElement(
+          "h3",
+          { className: "main__subtitle" },
+          "Software"
+        ),
+        React.createElement(
+          "p",
+          null,
+          "git, GitHub, Sketch, illustrator, indesign, photoshop, lightroom"
+        )
       )
     );
   }
