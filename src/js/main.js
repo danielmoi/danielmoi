@@ -152,26 +152,6 @@ var About = React.createClass({
   }
 });
 
-var Footer = React.createClass({
-  displayName: "Footer",
-
-  render: function render() {
-    return React.createElement(
-      "footer",
-      { className: "footer" },
-      React.createElement(
-        "div",
-        { className: "footer__container" },
-        React.createElement(
-          "p",
-          null,
-          "Made with ♥ & React © 2016 Daniel Moi"
-        )
-      )
-    );
-  }
-});
-
 // This is the highest level one
 // ReactDOM.render(
 //   <App/>, document.querySelector('#app'));
@@ -322,6 +302,15 @@ var MainLayout = React.createClass({
         "main",
         { className: "main" },
         this.props.children
+      ),
+      React.createElement(
+        "footer",
+        { className: "footer" },
+        React.createElement(
+          "div",
+          { className: "footer__container" },
+          "Made with ♥ & React © 2016 Daniel Moi"
+        )
       )
     );
   }

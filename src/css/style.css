@@ -218,8 +218,7 @@ input[type=submit] {
   margin: 0 auto;
   position: relative;
   top: 120px;
-  margin-bottom: 150px;
-  min-height: 100vh; }
+  margin-bottom: 150px; }
   @media screen and (min-width: 600px) {
     .main__container {
       top: 150px; } }
@@ -235,12 +234,18 @@ input[type=submit] {
   text-transform: uppercase;
   font-weight: 700; }
 
+.app {
+  min-height: 100vh; }
+
 .footer {
   width: 100%;
-  margin-top: 100vh; }
+  position: fixed;
+  bottom: 0;
+  left: 0; }
 
 .footer__container {
   max-width: 600px;
-  margin: 0 auto; }
-  .footer__container p {
-    text-align: left; }
+  margin: 0 auto;
+  padding: 0.25em 1em;
+  text-align: center;
+  font-size: 0.8em; }

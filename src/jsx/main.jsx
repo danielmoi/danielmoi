@@ -55,17 +55,7 @@ var About = React.createClass({
   }
 });
 
-var Footer = React.createClass({
-  render: function() {
-    return (
-      <footer className="footer">
-        <div className="footer__container">
-          <p>Made with &#9829; & React &copy; 2016 Daniel Moi</p>
-        </div>
-      </footer>
-    )
-  }
-})
+
 
 // This is the highest level one
 // ReactDOM.render(
@@ -140,6 +130,11 @@ var MainLayout = React.createClass({
         <main className="main">
           {this.props.children}
         </main>
+        <footer className="footer">
+          <div className="footer__container">
+            Made with &#9829; & React &copy; 2016 Daniel Moi
+          </div>
+        </footer>
       </div>
     )
   }
