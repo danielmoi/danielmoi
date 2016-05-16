@@ -246,7 +246,7 @@ var MainLayout = React.createClass({
           { className: "container" },
           React.createElement(
             "ul",
-            null,
+            { className: "nav__list" },
             React.createElement(
               "li",
               { className: "nav__list-item" },

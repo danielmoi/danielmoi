@@ -106,7 +106,7 @@ var MainLayout = React.createClass({
         </header>
         <nav className="nav">
           <div className="container">
-            <ul>
+            <ul className="nav__list">
               <li className="nav__list-item">
                 <Link to="/home" activeClassName="active">Home</Link>
               </li>
