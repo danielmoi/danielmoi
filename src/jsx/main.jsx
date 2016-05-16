@@ -62,26 +62,15 @@ var Footer = React.createClass({
   }
 })
 
-var App = React.createClass({
-
-  render: function() {
-
-    return (
-      <div>
-        <Header/>
-        <Footer/>
-      </div>
-    );
-  }
-});
-
 // This is the highest level one
 // ReactDOM.render(
 //   <App/>, document.querySelector('#app'));
 var Home = React.createClass({
   render: function() {
     return (
-      <h1>Welcome to the Home Page</h1>
+      <div className="main__container">
+        <h1>Welcome to the Home Page</h1>
+      </div>
     );
   }
 });
@@ -89,15 +78,21 @@ var MainLayout = React.createClass({
   render: function() {
     return (
       <div className="app">
-        <header className="primary-header"></header>
-        <div className="primary-aside">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/skills">Skills</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-          </ul>
-        </div>
-        <main>
+        <header className="header">
+          <div className="container">
+            <h1 className="header__title">Daniel Moi</h1>
+          </div>
+        </header>
+        <nav className="nav">
+          <div className="container">
+            <ul>
+              <li className="nav__list-item"><Link to="/">Home</Link></li>
+              <li className="nav__list-item"><Link to="/skills">Skills</Link></li>
+              <li className="nav__list-item"><Link to="/projects">Projects</Link></li>
+            </ul>
+          </div>
+        </nav>
+        <main className="main">
           {this.props.children}
         </main>
       </div>
@@ -110,7 +105,7 @@ var MainLayout = React.createClass({
 var browserHistory = ReactRouter.browserHistory;
 
 ReactDOM.render((
-  <Router history={ browserHistory }>
+  <Router history={ browserHistory}>
     <Route path="/" component={MainLayout}>
       <IndexRoute component={Home} />
       <Route path="/skills" component={Skills} />

@@ -1,7 +1,6 @@
 .header {
   max-width: 100%;
   text-align: center;
-  border-bottom: 1px solid white;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +14,7 @@
   }
 }
 
-.header__container {
+.container {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
@@ -34,17 +33,15 @@
 .header__monster {
   width: 5%;
 }
-.nav__container {
+.nav {
   display: none;
   max-width: 100%;
   text-align: center;
   position: fixed;
   width: 100%;
-  background: #ffffff;
   z-index: 1;
 
   padding: 0;
-  bottom: 30px;
   border-top: 1px solid $primary;
 
 
@@ -62,9 +59,8 @@
   display: block;
   padding: 1em 0;
   font-size: 1em;
-  color: black;
   @media screen and (min-width: 600px) {
     display: inline;
-    padding: 0 1em;
+    padding: 0 1em 0 0;
   }
 }

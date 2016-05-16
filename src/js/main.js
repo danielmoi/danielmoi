@@ -140,21 +140,6 @@ var Footer = React.createClass({
   }
 });
 
-var App = React.createClass({
-  displayName: "App",
-
-
-  render: function render() {
-
-    return React.createElement(
-      "div",
-      null,
-      React.createElement(Header, null),
-      React.createElement(Footer, null)
-    );
-  }
-});
-
 // This is the highest level one
 // ReactDOM.render(
 //   <App/>, document.querySelector('#app'));
@@ -163,9 +148,13 @@ var Home = React.createClass({
 
   render: function render() {
     return React.createElement(
-      "h1",
-      null,
-      "Welcome to the Home Page"
+      "div",
+      { className: "main__container" },
+      React.createElement(
+        "h1",
+        null,
+        "Welcome to the Home Page"
+      )
     );
   }
 });
@@ -176,45 +165,61 @@ var MainLayout = React.createClass({
     return React.createElement(
       "div",
       { className: "app" },
-      React.createElement("header", { className: "primary-header" }),
       React.createElement(
-        "div",
-        { className: "primary-aside" },
+        "header",
+        { className: "header" },
         React.createElement(
-          "ul",
-          null,
+          "div",
+          { className: "container" },
           React.createElement(
-            "li",
+            "h1",
+            { className: "header__title" },
+            "Daniel Moi"
+          )
+        )
+      ),
+      React.createElement(
+        "nav",
+        { className: "nav" },
+        React.createElement(
+          "div",
+          { className: "container" },
+          React.createElement(
+            "ul",
             null,
             React.createElement(
-              Link,
-              { to: "/" },
-              "Home"
-            )
-          ),
-          React.createElement(
-            "li",
-            null,
+              "li",
+              { className: "nav__list-item" },
+              React.createElement(
+                Link,
+                { to: "/" },
+                "Home"
+              )
+            ),
             React.createElement(
-              Link,
-              { to: "/skills" },
-              "Skills"
-            )
-          ),
-          React.createElement(
-            "li",
-            null,
+              "li",
+              { className: "nav__list-item" },
+              React.createElement(
+                Link,
+                { to: "/skills" },
+                "Skills"
+              )
+            ),
             React.createElement(
-              Link,
-              { to: "/projects" },
-              "Projects"
+              "li",
+              { className: "nav__list-item" },
+              React.createElement(
+                Link,
+                { to: "/projects" },
+                "Projects"
+              )
             )
           )
         )
       ),
       React.createElement(
         "main",
-        null,
+        { className: "main" },
         this.props.children
       )
     );
