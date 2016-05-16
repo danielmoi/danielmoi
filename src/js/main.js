@@ -8,67 +8,32 @@ var Link = _ReactRouter.Link;
 var browserHistory = _ReactRouter.browserHistory;
 
 
-var Projects = React.createClass({
-  displayName: "Projects",
+var Home = React.createClass({
+  displayName: "Home",
 
   render: function render() {
     return React.createElement(
-      "main",
+      "div",
       { className: "main__container" },
       React.createElement(
         "h2",
         { className: "main__title" },
-        "Projects"
+        "Hello!"
       ),
       React.createElement(
         "p",
         null,
-        "Project 0:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "Tic Tac Toe"
-        )
+        "I'm Daniel."
       ),
       React.createElement(
         "p",
         null,
-        "Project 0:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "Catbus 4000"
-        )
+        "Full-stack web developer and graphic designer."
       ),
       React.createElement(
         "p",
         null,
-        "Project 1:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "Sortr"
-        )
-      ),
-      React.createElement(
-        "p",
-        null,
-        "Project 2:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "BuddyUP"
-        )
-      ),
-      React.createElement(
-        "p",
-        null,
-        "Project 3:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "Musical Monsters"
-        )
+        "Passionate about code, design, climbing, and the oxford comma."
       )
     );
   }
@@ -152,39 +117,72 @@ var About = React.createClass({
   }
 });
 
-// This is the highest level one
-// ReactDOM.render(
-//   <App/>, document.querySelector('#app'));
-var Home = React.createClass({
-  displayName: "Home",
+var Projects = React.createClass({
+  displayName: "Projects",
 
   render: function render() {
     return React.createElement(
-      "div",
+      "main",
       { className: "main__container" },
       React.createElement(
         "h2",
         { className: "main__title" },
-        "Hello!"
+        "Projects"
       ),
       React.createElement(
         "p",
         null,
-        "I'm Daniel."
+        "Project 0:",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "Tic Tac Toe"
+        )
       ),
       React.createElement(
         "p",
         null,
-        "Full-stack web developer and graphic designer."
+        "Project 0:",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "Catbus 4000"
+        )
       ),
       React.createElement(
         "p",
         null,
-        "Passionate about code, design, climbing, and the oxford comma."
+        "Project 1:",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "Sortr"
+        )
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Project 2:",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "BuddyUP"
+        )
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Project 3:",
+        React.createElement(
+          "a",
+          { href: "/" },
+          "Musical Monsters"
+        )
       )
     );
   }
 });
+
 var Contact = React.createClass({
   displayName: "Contact",
 

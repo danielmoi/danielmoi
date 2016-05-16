@@ -1,27 +1,16 @@
 var {Router, Route, IndexRoute, Link, browserHistory} = ReactRouter
 
-var Projects = React.createClass({
+
+var Home = React.createClass({
   render: function() {
     return (
-      <main className="main__container">
-        <h2 className="main__title">Projects</h2>
-        <p>Project 0:
-          <a href="/">Tic Tac Toe</a>
-        </p>
-        <p>Project 0:
-          <a href="/">Catbus 4000</a>
-        </p>
-        <p>Project 1:
-          <a href="/">Sortr</a>
-        </p>
-        <p>Project 2:
-          <a href="/">BuddyUP</a>
-        </p>
-        <p>Project 3:
-          <a href="/">Musical Monsters</a>
-        </p>
-      </main>
-    )
+      <div className="main__container">
+        <h2 className="main__title">Hello!</h2>
+        <p>I'm Daniel.</p>
+        <p>Full-stack web developer and graphic designer.</p>
+        <p>Passionate about code, design, climbing, and the oxford comma.</p>
+      </div>
+    );
   }
 });
 
@@ -56,22 +45,33 @@ var About = React.createClass({
 });
 
 
-
-// This is the highest level one
-// ReactDOM.render(
-//   <App/>, document.querySelector('#app'));
-var Home = React.createClass({
+var Projects = React.createClass({
   render: function() {
     return (
-      <div className="main__container">
-        <h2 className="main__title">Hello!</h2>
-        <p>I'm Daniel.</p>
-        <p>Full-stack web developer and graphic designer.</p>
-        <p>Passionate about code, design, climbing, and the oxford comma.</p>
-      </div>
-    );
+      <main className="main__container">
+        <h2 className="main__title">Projects</h2>
+        <p>Project 0:
+          <a href="/">Tic Tac Toe</a>
+        </p>
+        <p>Project 0:
+          <a href="/">Catbus 4000</a>
+        </p>
+        <p>Project 1:
+          <a href="/">Sortr</a>
+        </p>
+        <p>Project 2:
+          <a href="/">BuddyUP</a>
+        </p>
+        <p>Project 3:
+          <a href="/">Musical Monsters</a>
+        </p>
+      </main>
+    )
   }
 });
+
+
+
 var Contact = React.createClass({
   render: function() {
     return (
