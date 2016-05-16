@@ -138,7 +138,8 @@ var Projects = React.createClass({
         "p",
         null,
         "My final project for General Assembly Web Development Immersive"
-      )
+      ),
+      React.createElement("img", { src: "img/musical-monsters.png", alt: "Musical Monsters" })
     );
   }
 });

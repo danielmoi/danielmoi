@@ -53,6 +53,7 @@ var Projects = React.createClass({
         <h3 className="main__subtitle">Musical Monsters</h3>
         <p>My final project for General Assembly Web Development Immersive
         </p>
+        <img src="img/musical-monsters.png" alt="Musical Monsters"/>
 
       </main>
     )
