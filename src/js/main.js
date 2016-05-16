@@ -158,7 +158,7 @@ var Contact = React.createClass({
       React.createElement(
         "p",
         null,
-        "You can drop me a line at:",
+        "You can drop me a line at: ",
         React.createElement(
           "a",
           { href: "mailto:daniel@ampersandmoi.com" },
@@ -167,17 +167,47 @@ var Contact = React.createClass({
       ),
       React.createElement(
         "h2",
-        null,
+        { className: "main__title" },
         "LinkedIn"
       ),
       React.createElement(
         "p",
         null,
-        "You can find my LinkedIn profile here:",
+        "You can find my LinkedIn profile here: ",
         React.createElement(
           "a",
           { href: "http://linkedin.com/in/danielmoi" },
-          "http://linkedin.com/in/danielmoi"
+          " linkedin.com/in/danielmoi"
+        )
+      ),
+      React.createElement(
+        "h2",
+        { className: "main__title" },
+        "GitHub"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "You can check out my repos here:",
+        React.createElement(
+          "a",
+          { href: "http://github.com/danielmoi" },
+          " github.com/danielmoi"
+        )
+      ),
+      React.createElement(
+        "h2",
+        { className: "main__title" },
+        "Twitter"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "I send occasional tweets from:",
+        React.createElement(
+          "a",
+          { href: "http://github.com/danielmoi" },
+          " @DM1199"
         )
       )
     );

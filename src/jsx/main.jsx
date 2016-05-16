@@ -67,13 +67,23 @@ var Contact = React.createClass({
       <div className="main__container">
         <h2 className="main__title">Email</h2>
         <p>
-          You can drop me a line at:
-          <a href="mailto:daniel@ampersandmoi.com">daniel@ampersandmoi.com</a>
+          You can drop me a line at: <a href="mailto:daniel@ampersandmoi.com">daniel@ampersandmoi.com</a>
         </p>
-        <h2>LinkedIn</h2>
-        <p>You can find my LinkedIn profile here:
-          <a href="http://linkedin.com/in/danielmoi">http://linkedin.com/in/danielmoi</a>
+
+        <h2 className="main__title">LinkedIn</h2>
+        <p>You can find my LinkedIn profile here: <a href="http://linkedin.com/in/danielmoi"> linkedin.com/in/danielmoi</a>
         </p>
+
+        <h2 className="main__title">GitHub</h2>
+        <p>You can check out my repos here:
+          <a href="http://github.com/danielmoi"> github.com/danielmoi</a>
+        </p>
+
+        <h2 className="main__title">Twitter</h2>
+        <p>I send occasional tweets from:
+          <a href="http://github.com/danielmoi"> @DM1199</a>
+        </p>
+
       </div>
     );
   }
