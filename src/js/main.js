@@ -8,26 +8,6 @@ var Link = _ReactRouter.Link;
 var browserHistory = _ReactRouter.browserHistory;
 
 
-var Header = React.createClass({
-  displayName: "Header",
-
-  render: function render() {
-    return React.createElement(
-      "header",
-      { className: "header" },
-      React.createElement(
-        "div",
-        { className: "header__container" },
-        React.createElement(
-          "h1",
-          { className: "header__title" },
-          "Daniel Moi"
-        )
-      )
-    );
-  }
-});
-
 var Projects = React.createClass({
   displayName: "Projects",
 
@@ -173,11 +153,26 @@ var Contact = React.createClass({
       React.createElement(
         "p",
         null,
-        "You can drop me a line at: ",
+        "You can drop me a line at:",
         React.createElement(
           "a",
           { href: "mailto:daniel@ampersandmoi.com" },
           "daniel@ampersandmoi.com"
+        )
+      ),
+      React.createElement(
+        "h2",
+        null,
+        "LinkedIn"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "You can find my LinkedIn profile here:",
+        React.createElement(
+          "a",
+          { href: "http://linkedin.com/in/danielmoi" },
+          "http://linkedin.com/in/danielmoi"
         )
       )
     );
@@ -203,7 +198,7 @@ var MainLayout = React.createClass({
             React.createElement(
               Link,
               { to: "/" },
-              "Daniel Moi"
+              React.createElement("img", { className: "header__logo", src: "img/danielmoi-name.svg", alt: "Daniel Moi" })
             )
           )
         )

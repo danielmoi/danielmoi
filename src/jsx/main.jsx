@@ -1,17 +1,5 @@
 var {Router, Route, IndexRoute, Link, browserHistory} = ReactRouter
 
-var Header = React.createClass({
-  render: function() {
-    return (
-      <header className="header">
-        <div className="header__container">
-          <h1 className="header__title">Daniel Moi</h1>
-        </div>
-      </header>
-    )
-  }
-});
-
 var Projects = React.createClass({
   render: function() {
     return (
@@ -49,7 +37,6 @@ var Skills = React.createClass({
   }
 });
 
-
 var Footer = React.createClass({
   render: function() {
     return (
@@ -80,7 +67,12 @@ var Contact = React.createClass({
       <div className="main__container">
         <h2 className="main__title">Email</h2>
         <p>
-          You can drop me a line at: <a href="mailto:daniel@ampersandmoi.com">daniel@ampersandmoi.com</a>
+          You can drop me a line at:
+          <a href="mailto:daniel@ampersandmoi.com">daniel@ampersandmoi.com</a>
+        </p>
+        <h2>LinkedIn</h2>
+        <p>You can find my LinkedIn profile here:
+          <a href="http://linkedin.com/in/danielmoi">http://linkedin.com/in/danielmoi</a>
         </p>
       </div>
     );
@@ -93,7 +85,13 @@ var MainLayout = React.createClass({
       <div className="app">
         <header className="header">
           <div className="container">
-            <h1 className="header__title"><Link to="/">Daniel Moi</Link></h1>
+            <h1 className="header__title">
+
+              <Link to="/">
+                <img className="header__logo" src="img/danielmoi-name.svg" alt="Daniel Moi"/>
+
+                </Link>
+            </h1>
           </div>
         </header>
         <nav className="nav">
@@ -115,7 +113,6 @@ var MainLayout = React.createClass({
                 <Link to="/contact" activeClassName="active">Say hello!</Link>
               </li>
 
-
             </ul>
           </div>
         </nav>
@@ -123,7 +120,7 @@ var MainLayout = React.createClass({
           {this.props.children}
         </main>
       </div>
-      )
+    )
   }
 })
 // var routerHistory = ReactRouter.useRouterHistory;
@@ -132,13 +129,13 @@ var MainLayout = React.createClass({
 var browserHistory = ReactRouter.browserHistory;
 
 ReactDOM.render((
-  <Router history={ browserHistory}>
-    <Route path="/" component={ MainLayout }>
-      <IndexRoute component={ Home } />
-      <Route path="/home" component={ Home } />
-      <Route path="/skills" component={ Skills } />
-      <Route path="/projects" component={ Projects } />
-      <Route path="/contact" component={ Contact } />
+  <Router history={browserHistory}>
+    <Route path="/" component={MainLayout}>
+      <IndexRoute component={Home}/>
+      <Route path="/home" component={Home}/>
+      <Route path="/skills" component={Skills}/>
+      <Route path="/projects" component={Projects}/>
+      <Route path="/contact" component={Contact}/>
 
     </Route>
   </Router>

@@ -143,6 +143,11 @@ input[type=submit] {
 .field_with_errors {
   display: inline; }
 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left; }
+
 .header {
   max-width: 100%;
   text-align: center;
@@ -158,10 +163,10 @@ input[type=submit] {
       height: 100px;
       text-align: center; } }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left; }
+.header__logo {
+  width: 50%;
+  line-height: 100px;
+  vertical-align: middle; }
 
 .header__title {
   margin: 0;
