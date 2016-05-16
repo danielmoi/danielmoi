@@ -56,7 +56,10 @@ var Home = React.createClass({
   render: function() {
     return (
       <div className="main__container">
-        <h2 className="main__title">Welcome to the Home Page</h2>
+        <h2 className="main__title">Hello!</h2>
+        <p>I'm Daniel.</p>
+        <p>Full-stack web developer and graphic designer.</p>
+        <p>Passionate about code, design, climbing, and the oxford comma.</p>
       </div>
     );
   }

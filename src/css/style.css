@@ -146,7 +146,8 @@ input[type=submit] {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  text-align: left; }
+  text-align: left;
+  padding: 0 1em; }
 
 .header {
   max-width: 100%;
@@ -164,7 +165,7 @@ input[type=submit] {
       text-align: center; } }
 
 .header__logo {
-  width: 50%;
+  width: 55%;
   line-height: 100px;
   vertical-align: middle; }
 
@@ -209,6 +210,7 @@ input[type=submit] {
 
 .main__container {
   max-width: 600px;
+  padding: 0 1em;
   margin: 0 auto;
   position: relative;
   top: 120px;

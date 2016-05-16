@@ -133,7 +133,22 @@ var Home = React.createClass({
       React.createElement(
         "h2",
         { className: "main__title" },
-        "Welcome to the Home Page"
+        "Hello!"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "I'm Daniel."
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Full-stack web developer and graphic designer."
+      ),
+      React.createElement(
+        "p",
+        null,
+        "Passionate about code, design, climbing, and the oxford comma."
       )
     );
   }
