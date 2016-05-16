@@ -127,57 +127,17 @@ var Projects = React.createClass({
       React.createElement(
         "h2",
         { className: "main__title" },
-        "Projects"
+        "Some of the things I've made"
+      ),
+      React.createElement(
+        "h3",
+        { className: "main__subtitle" },
+        "Musical Monsters"
       ),
       React.createElement(
         "p",
         null,
-        "Project 0:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "Tic Tac Toe"
-        )
-      ),
-      React.createElement(
-        "p",
-        null,
-        "Project 0:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "Catbus 4000"
-        )
-      ),
-      React.createElement(
-        "p",
-        null,
-        "Project 1:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "Sortr"
-        )
-      ),
-      React.createElement(
-        "p",
-        null,
-        "Project 2:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "BuddyUP"
-        )
-      ),
-      React.createElement(
-        "p",
-        null,
-        "Project 3:",
-        React.createElement(
-          "a",
-          { href: "/" },
-          "Musical Monsters"
-        )
+        "My final project for General Assembly Web Development Immersive"
       )
     );
   }

@@ -49,22 +49,11 @@ var Projects = React.createClass({
   render: function() {
     return (
       <main className="main__container">
-        <h2 className="main__title">Projects</h2>
-        <p>Project 0:
-          <a href="/">Tic Tac Toe</a>
+        <h2 className="main__title">Some of the things I've made</h2>
+        <h3 className="main__subtitle">Musical Monsters</h3>
+        <p>My final project for General Assembly Web Development Immersive
         </p>
-        <p>Project 0:
-          <a href="/">Catbus 4000</a>
-        </p>
-        <p>Project 1:
-          <a href="/">Sortr</a>
-        </p>
-        <p>Project 2:
-          <a href="/">BuddyUP</a>
-        </p>
-        <p>Project 3:
-          <a href="/">Musical Monsters</a>
-        </p>
+
       </main>
     )
   }
