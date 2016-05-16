@@ -20,3 +20,8 @@ a {
     color: $links;
   }
 }
+
+.active {
+  color: $primary;
+  font-weight: 900;
+}

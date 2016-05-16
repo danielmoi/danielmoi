@@ -69,26 +69,53 @@ var Home = React.createClass({
   render: function() {
     return (
       <div className="main__container">
-        <h1>Welcome to the Home Page</h1>
+        <h2 className="main__title">Welcome to the Home Page</h2>
       </div>
     );
   }
 });
+var Contact = React.createClass({
+  render: function() {
+    return (
+      <div className="main__container">
+        <h2 className="main__title">Email</h2>
+        <p>
+          You can drop me a line at: <a href="mailto:daniel@ampersandmoi.com">daniel@ampersandmoi.com</a>
+        </p>
+      </div>
+    );
+  }
+});
+
 var MainLayout = React.createClass({
   render: function() {
     return (
       <div className="app">
         <header className="header">
           <div className="container">
-            <h1 className="header__title">Daniel Moi</h1>
+            <h1 className="header__title"><Link to="/">Daniel Moi</Link></h1>
           </div>
         </header>
         <nav className="nav">
           <div className="container">
             <ul>
-              <li className="nav__list-item"><Link to="/">Home</Link></li>
-              <li className="nav__list-item"><Link to="/skills">Skills</Link></li>
-              <li className="nav__list-item"><Link to="/projects">Projects</Link></li>
+              <li className="nav__list-item">
+                <Link to="/home" activeClassName="active">Home</Link>
+              </li>
+
+              <li className="nav__list-item">
+                <Link to="/skills" activeClassName="active">About Me</Link>
+              </li>
+
+              <li className="nav__list-item">
+                <Link to="/projects" activeClassName="active">Projects</Link>
+              </li>
+
+              <li className="nav__list-item">
+                <Link to="/contact" activeClassName="active">Say hello!</Link>
+              </li>
+
+
             </ul>
           </div>
         </nav>
@@ -106,10 +133,12 @@ var browserHistory = ReactRouter.browserHistory;
 
 ReactDOM.render((
   <Router history={ browserHistory}>
-    <Route path="/" component={MainLayout}>
-      <IndexRoute component={Home} />
-      <Route path="/skills" component={Skills} />
-      <Route path="/projects" component={Projects} />
+    <Route path="/" component={ MainLayout }>
+      <IndexRoute component={ Home } />
+      <Route path="/home" component={ Home } />
+      <Route path="/skills" component={ Skills } />
+      <Route path="/projects" component={ Projects } />
+      <Route path="/contact" component={ Contact } />
 
     </Route>
   </Router>

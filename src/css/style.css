@@ -95,6 +95,10 @@ a {
   a:hover {
     color: #00a5cd; }
 
+.active {
+  color: #00a5cd;
+  font-weight: 900; }
+
 .btn {
   font-size: 1em;
   display: inline-block;
@@ -196,7 +200,7 @@ input[type=submit] {
   @media screen and (min-width: 600px) {
     .nav__list-item {
       display: inline;
-      padding: 0 1em 0 0; } }
+      padding: 0 2em 0 0; } }
 
 .main__container {
   max-width: 600px;

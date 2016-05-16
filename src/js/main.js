@@ -151,13 +151,39 @@ var Home = React.createClass({
       "div",
       { className: "main__container" },
       React.createElement(
-        "h1",
-        null,
+        "h2",
+        { className: "main__title" },
         "Welcome to the Home Page"
       )
     );
   }
 });
+var Contact = React.createClass({
+  displayName: "Contact",
+
+  render: function render() {
+    return React.createElement(
+      "div",
+      { className: "main__container" },
+      React.createElement(
+        "h2",
+        { className: "main__title" },
+        "Email"
+      ),
+      React.createElement(
+        "p",
+        null,
+        "You can drop me a line at: ",
+        React.createElement(
+          "a",
+          { href: "mailto:daniel@ampersandmoi.com" },
+          "daniel@ampersandmoi.com"
+        )
+      )
+    );
+  }
+});
+
 var MainLayout = React.createClass({
   displayName: "MainLayout",
 
@@ -174,7 +200,11 @@ var MainLayout = React.createClass({
           React.createElement(
             "h1",
             { className: "header__title" },
-            "Daniel Moi"
+            React.createElement(
+              Link,
+              { to: "/" },
+              "Daniel Moi"
+            )
           )
         )
       ),
@@ -192,7 +222,7 @@ var MainLayout = React.createClass({
               { className: "nav__list-item" },
               React.createElement(
                 Link,
-                { to: "/" },
+                { to: "/home", activeClassName: "active" },
                 "Home"
               )
             ),
@@ -201,8 +231,8 @@ var MainLayout = React.createClass({
               { className: "nav__list-item" },
               React.createElement(
                 Link,
-                { to: "/skills" },
-                "Skills"
+                { to: "/skills", activeClassName: "active" },
+                "About Me"
               )
             ),
             React.createElement(
@@ -210,8 +240,17 @@ var MainLayout = React.createClass({
               { className: "nav__list-item" },
               React.createElement(
                 Link,
-                { to: "/projects" },
+                { to: "/projects", activeClassName: "active" },
                 "Projects"
+              )
+            ),
+            React.createElement(
+              "li",
+              { className: "nav__list-item" },
+              React.createElement(
+                Link,
+                { to: "/contact", activeClassName: "active" },
+                "Say hello!"
               )
             )
           )
@@ -237,7 +276,9 @@ ReactDOM.render(React.createElement(
     Route,
     { path: "/", component: MainLayout },
     React.createElement(IndexRoute, { component: Home }),
+    React.createElement(Route, { path: "/home", component: Home }),
     React.createElement(Route, { path: "/skills", component: Skills }),
-    React.createElement(Route, { path: "/projects", component: Projects })
+    React.createElement(Route, { path: "/projects", component: Projects }),
+    React.createElement(Route, { path: "/contact", component: Contact })
   )
 ), document.getElementById('app'));
