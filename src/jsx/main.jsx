@@ -61,7 +61,6 @@ var Projects = React.createClass({
 });
 
 
-
 var Contact = React.createClass({
   render: function() {
     return (
